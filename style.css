@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body{
+  color:white;
+  font-size:16px;
+  font-family: 'Montserrat';
+  background-color: #2d253a;
+}
+
+header {
+  min-height: 70vh;
+  background: url("https://i.redd.it/cxsoz0ptqz631.jpg") no-repeat center;
+  background-size: cover;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); */
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar {
+  font-size: large;
+  font-family: 'Nunito';
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem 5rem;
+  font-weight: bold;
+}
+
+.navbar li {
+  display: inline-flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 1.25rem;
+}
+
+.navbar h2:hover,
+.navbar ul li a:hover{
+color: #ee7977;
+}
+
+.headerlogo .circle {
+  animation: pulse 3s infinite;
+  display: flex;
+  margin-top: 10vh;
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+  margin-right:auto;
+  margin-left:auto;
+}
+.name {
+  text-align:center;
+  font-size:2rem;
+  font-weight:bold;
+  margin-top:1rem;
+}
+
+.circle:hover {
+  width: 13rem;
+  height: 13rem;
+}
+
+.headerlogo {
+  position: relative;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.drzeworight {
+  position: absolute;
+  font-weight: 700;
+  font-size: 1.55rem;
+  right: 1rem;
+  top: 20rem;
+  width: 17vw;
+  animation: show 6s 3s both ;
+  opacity:0;
+  margin: 5px;
+}
+
+.drzewoleft {
+  position: absolute;
+  font-weight: 700;
+  font-size: 2rem;
+  left: 1rem;
+  top:20rem;
+  width: 17vw;
+  animation: show 3s 1.5s both ;
+  opacity:0;
+  margin: 5px;
+}
+
+.circular{
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
+.circular .inner, .circular .outer, .circular .circle{
+  position: absolute;
+  z-index: 6;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.2);
+}
+.circular .inner{
+  top: 50%;
+  left: 50%;
+  height: 80px;
+  width: 80px;
+  margin: -40px 0 0 -40px;
+  background-color: #dde6f0;
+  border-radius: 100%;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+.circular .circle{
+  z-index: 1;
+  box-shadow: none;
+}
+.circular .numb{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4158d0;
+}
+.circular .bar{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 100px, 100px, 50px);
+}
+.circle .bar .progress{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 50px, 100px, 0px);
+}
+.circle .bar .progress, .dot span{
+  background: #4158d0;
+}
+.circle .left .progress{
+  z-index: 1;
+  animation: left 4s linear both;
+}
+
+.circle .right{
+  z-index: 3;
+  transform: rotate(180deg);
+}
+.circle .right .progress{
+  animation: right 4s linear both;
+  animation-delay: 4s;
+}
+
+.circle .dot{
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  height: 10px;
+  margin-top: -5px;
+  animation: dot 8s linear both;
+  transform-origin: 0% 50%;
+}
+.circle .dot span {
+  position: absolute;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+/* ------------- Druga Strona -------- */
+
+.przejscie {
+  background: linear-gradient(0deg, rgba(45,37,58,1) 0%, rgb(26, 26, 26) 300%);
+  height: 10vh;
+}
+
+.HTML {
+  
+  height: 10px;
+  width: 70%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+              0 1px rgba(255,255,255,0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  margin-bottom:30px;
+}
+.CSS {
+  height: 10px;
+  width: 70%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+              0 1px rgba(255,255,255,0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.SS {
+  height: 10px;
+  width: 90%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+              0 1px rgba(255,255,255,0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.LS {
+  height: 10px;
+  width: 80%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+              0 1px rgba(255,255,255,0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.WPS {
+  height: 10px;
+  width: 50%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+              0 1px rgba(255,255,255,0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.image {
+  width:15vw;
+  height:30vh;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity:1;
+  }
+}
+
+.experienceSec, .aboutMeSec, .reasonSec {
+  width:80vw;
+  margin:auto;
+  -webkit-box-shadow: 0px 0px 13px 8px rgba(35,26,48,1);
+  -moz-box-shadow: 0px 0px 13px 8px rgba(35,26,48,1);
+  box-shadow: 0px 0px 13px 8px rgba(35,26,48,1);
+}
+
+.aboutMeText, .experienceText, .reasonText {
+  padding:5vh;
+  font-size:2rem;
+  text-align:center;
+}
+
+.aboutMeTextSmall, .experienceTextSmall {
+  font-size:1.3rem;
+  margin:auto;
+  margin-top:6vh;
+  width:60vw;
+  text-align:center;
+}
+
+.music, .books, .politics {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  width:55vw;
+  text-align:left;
+}
+
+.musicIcon, .bookIcon, .politicsIcon {
+  font-size:9vh;
+  width:10vw;
+  padding:4vh;
+  margin:center;
+}
+
+/* ---- Experience ---- */
+
+.experience, .reason {
+  margin-top:10vh;
+}
+
+.TextNormal {
+  margin:auto;
+  text-align:center;
+  font-size:1.5rem;
+  margin:3vw 0 3vw 0;
+  line-height: 2rem;;
+}
+
+.icon-restaurant, .icon-pencil-alt, .icon-shopping-bag {
+  font-size:7vh;
+  height:10vh;
+  width:10vw;
+}
+
+/*----- reason -------*/
+
+ol {
+  word-wrap: break-word;
+}
+
+ol > li {
+  list-style-type:square;
+  text-align:left;
+  margin:3vw;
+  letter-spacing: 1px;;
+}
+
+.table {
+  font-size:1.4rem;
+  max-width:55rem;
+  border: 7px double #fff;
+  margin:auto;
+}
