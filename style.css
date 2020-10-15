@@ -123,8 +123,6 @@ color: #ee7977;
 .aboutMeTextSmall, .experienceTextSmall {
   font-size:1.3rem;
   margin:auto;
-  margin-top:3vh;
-  margin-bottoM:3vh;
   width:60vw;
   text-align:center;
 }
