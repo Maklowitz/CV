@@ -44,25 +44,22 @@ color: #ee7977;
 }
 
 .headerlogo .circle {
-  animation: pulse 3s infinite;
-  display: flex;
+  display: block;
   margin-top: 10vh;
   width: 12.5rem;
   height: 12.5rem;
   border-radius: 50%;
-  margin-right:auto;
-  margin-left:auto;
+  position: absolute;
+  left: 50%;
+  top: 200%;
+  transform: translate(-50%, -50%);
 }
+
 .name {
   text-align:center;
   font-size:2rem;
   font-weight:bold;
   margin-top:1rem;
-}
-
-.circle:hover {
-  width: 13rem;
-  height: 13rem;
 }
 
 .headerlogo {
@@ -76,7 +73,7 @@ color: #ee7977;
   font-weight: 700;
   font-size: 1.55rem;
   right: 1rem;
-  top: 20rem;
+  top: 14rem;
   width: 17vw;
   animation: show 6s 3s both ;
   opacity:0;
@@ -88,7 +85,7 @@ color: #ee7977;
   font-weight: 700;
   font-size: 2rem;
   left: 1rem;
-  top:20rem;
+  top:14rem;
   width: 17vw;
   animation: show 3s 1.5s both ;
   opacity:0;
